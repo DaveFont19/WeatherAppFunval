@@ -1,0 +1,81 @@
+#target{
+  color: white;
+  background-color: #6d6f79;
+  padding: .2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+#location{
+  display: flex;
+  justify-content: space-between;
+}
+#drawer, .sideBar{
+  width: 28rem;
+  height: 100vh;
+  background-color: #1e213a;
+}
+#buttonSearch{
+  background-color: #3c47e9;
+}
+#inputSearch::placeholder{
+  color: white;
+
+}
+#inputSearch{
+  background-color: #6e707a;
+}
+#datas{
+  color: #a09fb1;
+}
+#clouds{
+  background-image: url(../src/assets/images/1e213a.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0rem 5rem ;
+}
+#allTheCards{
+  background-color: #100e1d;
+}
+#card, #miniCard{
+  background-color: #1e213a;
+  color: white;
+}
+#slider{
+  color: yellow;
+}
+#numbersHumidity{
+  justify-content: space-between;
+}
+#min{
+  color: #a09fb1;
+}
+footer{
+  position: relative;
+}
+#footer{
+  position: absolute;
+  top: 14rem;
+}
+.active{
+  background-color: white;
+  color: #100e1d;
+  padding: .2rem;
+  border-radius: 50%;
+}
+.desactive{
+  background-color: #a09fb1;
+  color: white;
+  padding: .2rem;
+  border-radius: 50%;
+}
+#containerButtons{
+  gap: 1rem;
+  justify-content: flex-end;
+  padding-right: 8rem;
+  padding-top: 1rem;
+}
+#arrow{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
