@@ -29,7 +29,7 @@ function Cards({globalData, oneCall}) {
         <button onClick={handleClick}  className={buttonActive ? 'active' : 'desactive'}>  °C  </button>
         <button onClick={handleChange}  className={buttonActive ? 'desactive' : 'active'}>  °F  </button>
       </div>
-    <div id='miniCards' className='sm:grid grid-cols-2 lg:flex gap-8 mx-32'>
+    <div id='miniCards' className='grid grid-cols-2 gap-8 lg:flex mx-14'>
       { data ? (data.slice(0, 5).map((element, index) =>
         (<ForeCast
         key={index}

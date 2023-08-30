@@ -77,10 +77,10 @@ function ApiCall({setGlobalData, setOneCall}) {
 
 
  return (
-  <div className='sideBar md:w-full container lg:w-full'>
-    <nav id='clouds' className='md:py8 lg:w-full h-screen container'>
+  <div className='w-full h-full' >
+    <nav id='clouds' className='flex justify-between flex-col items-center h-full py-8'>
       
-      <div id='location' className='flex pt-8 ml-4 pb-4'>
+      <div id='location' className='w-full px-8'>
         <Location
         setLat={setLat}
         setLon={setLon}></Location>
@@ -90,17 +90,17 @@ function ApiCall({setGlobalData, setOneCall}) {
       </div>
 
       {data ? 
-      <footer className='footer'>
-        <img src={image} className='mx-28 mt-4'/>
-        <div id="footer" className='lg: pt-16 mx-32'>
-          <div className='flex items-baseline'>
-            <h1 className=' text-white mb-16 mt-8 md:text-7xl lg:text-8xl'>{temperatureFloor }</h1><span id='min' className='text-5xl'>°C</span>
+      <>
+        <img src={image}/>
+
+          <div className='flex items-center' >
+            <h1 className=' text-white text-8xl '>{temperatureFloor }</h1><span id='min' className='text-5xl'>°C</span>
           </div>
-          <h2 id="datas" className="text-center mb-16 text-3xl">{data.weather[0].main}</h2>
+          <h2 id="datas" className="text-center mb-12 text-3xl">{data.weather[0].main}</h2>
           <h2 id="datas" className="text-center mb-2 text-1xl">{`${dayOfWeek}, ${dayOfMonth} ${month}`}</h2>
-          <h3 id='datas' className="text-center mb-2" ><i class="fa-solid fa-location-dot"></i> {city}</h3> 
-        </div>
-      </footer> : 
+          <h3 id='datas' className="text-center mb-8" ><i class="fa-solid fa-location-dot"></i> {city}</h3> 
+
+      </> : 
       <Box sx={{ display: 'flex' }}>
         <CircularProgress />
       </Box>}

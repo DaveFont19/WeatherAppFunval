@@ -9,14 +9,14 @@ function App() {
   const [oneCall, setOneCall] = useState("")
 
   return (
-    <section className='sm:grid grid-cols-1 md:flex lg:flex'>
-        <div className='h-screen sm:w-screen md:w-1/3 lg:w-1/3'>
+    <section className='flex flex-col lg:flex-row'>
+        <div className='h-screen w-screen  lg:w-1/3'>
           <ApiCall
         setGlobalData={setGlobalData}
         setOneCall={setOneCall}
         />
         </div>
-        <div id="allTheCards" className='sm:w-screen md:w-2/3 lg:w-full'>
+        <div id="allTheCards" className='w-screen lg:w-2/3'>
         <Cards
         globalData={globalData}
         oneCall={oneCall}

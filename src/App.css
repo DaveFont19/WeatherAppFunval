@@ -29,10 +29,9 @@
   color: #a09fb1;
 }
 #clouds{
-  background-image: url(../src/assets/images/1e213a.png);
+  background-image: url(../src/assets/images/sidebar-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0rem 5rem ;
+  background-size: cover;
 }
 #allTheCards{
   background-color: #100e1d;
