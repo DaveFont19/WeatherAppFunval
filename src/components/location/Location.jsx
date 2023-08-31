@@ -25,14 +25,13 @@ function Location({ setLat, setLon }) {
         setLon(response.data[0].lon);
       })
       .catch(function (error) {
-        console.log(error);
+        throw error;
       });
   }, [location]);
 
   const changeCity = () => {
     setLocation(newCity);
     setRecordCities([...recordCities, [newCity]]);
-    console.log(recordCities);
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -51,7 +50,13 @@ function Location({ setLat, setLon }) {
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
     >
-      <span id="close" class="material-symbols-outlined" onMouseUp={toggleDrawer(anchor, false)}>close</span>
+      <span
+        id="close"
+        class="material-symbols-outlined"
+        onMouseUp={toggleDrawer(anchor, false)}
+      >
+        close
+      </span>
       <div>
         <input
           type="text"

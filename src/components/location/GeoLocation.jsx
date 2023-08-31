@@ -38,7 +38,7 @@ function GeoLocation({setLat, setLon}) {
   
     return (
       <div>
-        <span id='target' class="material-symbols-outlined" onClick={geoFindMe}>
+        <span id='target' className ="material-symbols-outlined" onClick={geoFindMe}>
         my_location
         </span>
       </div>
