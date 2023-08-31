@@ -71,10 +71,15 @@ footer{
 #containerButtons{
   gap: 1rem;
   justify-content: flex-end;
-  padding-right: 8rem;
-  padding-top: 1rem;
 }
-#arrow{
-  font-size: 2rem;
-  margin-top: 1rem;
+#listRecord:hover{
+  border: solid gray;
+}
+#close{
+  cursor: pointer;
+  color: white;
+}
+input{
+  background-color: #1e213a;
+  border: solid white;
 }

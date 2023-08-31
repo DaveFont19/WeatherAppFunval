@@ -14,7 +14,7 @@ function ApiCall({setGlobalData, setOneCall}) {
 
   const [temperature, setTemperature] = useState (false)
   const [city, setCity] = useState ("")
-  const [images, setImages] = useState ("01n")
+  const [images, setImages] = useState ("09d")
   const [lat, setLat] = useState ("")
   const [lon, setLon] = useState ("")
   const [data, setData] = useState ("")
@@ -35,6 +35,7 @@ function ApiCall({setGlobalData, setOneCall}) {
         setCity(response.data.name);
         setData(response.data)
         setImages(response. data.weather[0].icon);
+        console.log(response. data)
       })
       .catch(function (error) {
         console.log(error);
