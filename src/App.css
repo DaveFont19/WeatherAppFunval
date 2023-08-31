@@ -78,6 +78,9 @@ footer{
 #close{
   cursor: pointer;
   color: white;
+  margin-top: 1rem;
+  margin-left: 70%;
+  margin-bottom: 2rem;
 }
 input{
   background-color: #1e213a;
