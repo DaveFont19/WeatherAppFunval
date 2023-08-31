@@ -29,10 +29,9 @@
   color: #a09fb1;
 }
 #clouds{
-  background-image: url(../src/assets/images/1e213a.png);
+  background-image: url(../src/assets/images/sidebar-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0rem 5rem ;
+  background-size: cover;
 }
 #allTheCards{
   background-color: #100e1d;
@@ -72,10 +71,18 @@ footer{
 #containerButtons{
   gap: 1rem;
   justify-content: flex-end;
-  padding-right: 8rem;
-  padding-top: 1rem;
 }
-#arrow{
-  font-size: 2rem;
+#listRecord:hover{
+  border: solid gray;
+}
+#close{
+  cursor: pointer;
+  color: white;
   margin-top: 1rem;
+  margin-left: 70%;
+  margin-bottom: 2rem;
+}
+input{
+  background-color: #1e213a;
+  border: solid white;
 }
